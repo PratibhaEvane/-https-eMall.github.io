@@ -14,10 +14,10 @@ export class AdminLoginComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  adminLogin(data: Admin) {
 
-    this.router.navigate(['admin-home']);
-    alert('login success!');
+  adminLogin(data: Admin) {
+    // console.log(data);
+    this.adminService.adminLogin(data);
 
   }
 }

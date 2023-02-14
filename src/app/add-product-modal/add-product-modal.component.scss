@@ -15,7 +15,6 @@
         button {
             width: 26px;
             height: 26px;
-            /* background: $color-primary; */
             border-radius: 50%;
             opacity: 1;
             text-align: center;
@@ -32,22 +31,3 @@
         margin: 6px 0;
     }
 }
-
-
-
-
-
-
-
-
-input,
-select {
-    border: 1px solid #d9dbe9;
-    border-radius: 10px;
-    height: 45px;
-    color: #191632;
-}
-
-/* .form-button:disabled {
-    background-color: $color-light-grey !important;
-} */

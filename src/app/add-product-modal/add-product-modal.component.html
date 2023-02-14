@@ -6,14 +6,15 @@
     </div>
     <hr>
     <div class="modal-body">
-        <form [formGroup]="addProductForm">
-            <input type="text" class="form-input" formControlName="product_name" placeholder="enter your admin ID"
-                ngModel>
-            <input type="text" class="form-input" formControlName="prod_price" placeholder="password" ngModel>
-            <input type="text" class="form-input" formControlName="prod_category" placeholder="password" ngModel>
-            <input type="text" class="form-input" formControlName="prod_brand" placeholder="password" ngModel>
-            <input type="text" class="form-input" formControlName="prod_img" placeholder="password" ngModel>
+        <form class="forms" [formGroup]="addProductForm">
+            <input type="text" class="form-input" formControlName="product_name" placeholder="enter product name">
+            <input type="text" class="form-input" formControlName="prod_price" placeholder="enter product price">
+            <input type="text" class="form-input" formControlName="prod_category" placeholder="enter product category">
+            <input type="text" class="form-input" formControlName="prod_brand" placeholder="enter product brand">
+            <input type="file" class="form-input" formControlName="prod_img" placeholder="upload product image">
+            <button type="submit" class="form-input form-button" (click)="addProduct()">Add
+                Product</button>
+            <button type="submit" class="form-input form-button">Reset</button>
         </form>
-        <button type="submit" class="form-input form-button">Add Product</button>
     </div>
 </div>

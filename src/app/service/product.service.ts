@@ -29,4 +29,10 @@ export class ProductService {
   //   // Observable.forkJoin (RxJS 5) changes to just forkJoin() in RxJS 6
   //   return forkJoin([category, brand]);
   // }
+
+  // funtion to add a product on api;
+  addProductOnApi(data: any) {
+    return this.http.post("http://apps.codebetter.in:8082/emall/api/product/save", data);
+  }
+
 }

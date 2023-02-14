@@ -3,7 +3,7 @@ export interface ProductList {
     prod_price: Number,
     prod_cate: String,
     prod_brand: String,
-    prod_image: any,
+    prod_image: typeof Image,
 }
 export interface Admin {
     adminid: string,

@@ -10,14 +10,19 @@ export class AdminService {
   constructor(private http: HttpClient) { }
 
   // this function is for admin login via api
+  adminLogin(admin: Admin) {
+    console.log(admin);
+    // this.http.post("http://apps.codebetter.in:8082/emall/user/adminlogin", admin);
+    return this.http.post(`http://apps.codebetter.in:8082/emall/user/adminlogin?adminid=${admin.adminid}&password=${admin.password}`, admin,
+      { observe: 'response' }).subscribe((data: any) => {
+        console.log(data);
+        if (data && data.body && data.body.length) {
+          console.log('login success');
+        }
+        else {
+          console.log('login failed');
+        }
+      });
 
-  adminLogin(adminid: string, password: string) {
-    if (adminid === 'admin@gmail.com' && password === '12345') {
-      return 200;
-      this.http.post("http://apps.codebetter.in:8082/emall/user/adminlogin", adminid);
-
-    } else {
-      return 403;
-    }
   }
 }
