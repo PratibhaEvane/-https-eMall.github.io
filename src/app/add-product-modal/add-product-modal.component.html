@@ -1,0 +1,19 @@
+<!-- here admin will add new product for selling -->
+<div class="modal-wrapper">
+    <div class="modal-header">
+        <h5 class="modal-title"> Add New Product</h5>
+        <button type="button" class="close" (click)="dismiss()"></button>
+    </div>
+    <hr>
+    <div class="modal-body">
+        <form [formGroup]="addProductForm">
+            <input type="text" class="form-input" formControlName="product_name" placeholder="enter your admin ID"
+                ngModel>
+            <input type="text" class="form-input" formControlName="prod_price" placeholder="password" ngModel>
+            <input type="text" class="form-input" formControlName="prod_category" placeholder="password" ngModel>
+            <input type="text" class="form-input" formControlName="prod_brand" placeholder="password" ngModel>
+            <input type="text" class="form-input" formControlName="prod_img" placeholder="password" ngModel>
+        </form>
+        <button type="submit" class="form-input form-button">Add Product</button>
+    </div>
+</div>

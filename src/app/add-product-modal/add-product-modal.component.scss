@@ -1,0 +1,53 @@
+.modal-wrapper {
+    padding: 30px;
+
+    .modal-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        h5 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            width: 26px;
+            height: 26px;
+            /* background: $color-primary; */
+            border-radius: 50%;
+            opacity: 1;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+
+            span {
+                vertical-align: text-top;
+            }
+        }
+    }
+
+    hr {
+        margin: 6px 0;
+    }
+}
+
+
+
+
+
+
+
+
+input,
+select {
+    border: 1px solid #d9dbe9;
+    border-radius: 10px;
+    height: 45px;
+    color: #191632;
+}
+
+/* .form-button:disabled {
+    background-color: $color-light-grey !important;
+} */
