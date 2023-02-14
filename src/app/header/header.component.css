@@ -1,0 +1,73 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-image: linear-gradient(to left, #a52a2a, bisque);
+    width: 100%;
+    float: top;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    width: 100px;
+    font-family: Trebuchet MS;
+    font-size: 30px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+/* .logo img {
+  height: 50px;
+  width: 50px;
+} */
+
+.search-container {
+    flex: 1;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+
+.search-container input {
+    flex: 1;
+    height: 40px;
+    border: 1px black solid;
+    border-right: none;
+}
+
+.search-container ::-webkit-input-placeholder {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.search-container button {
+    height: 40px;
+    border: 1px black solid;
+    border-left: none;
+    font-weight: bold;
+}
+
+.search-products-list {
+    position: absolute;
+    top: 59px;
+    left: 156.8px;
+    background-color: white;
+    width: 1079px;
+    z-index: 10;
+}
+
+.search-products-list li {
+    list-style: none;
+}
+
+.user-login {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}

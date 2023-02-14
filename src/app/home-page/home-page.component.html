@@ -1,0 +1,46 @@
+<div class="carousel"><ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="https://www.reliancedigital.in/medias/Smart-Technology-Fest-Carousel-Banner-Desktop.jpg?context=bWFzdGVyfGltYWdlc3w5NzQ4MHxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaDgzLzk5NTg4MjY1MDgzMTguanBnfDNjYjRlMzg1ZTA3MWZkOGZhNGExZDg3OTQ5OTRlMDYzNzYwNWY2OTFjMWRhZjg3ZThkMGI5ZDk0Y2Q0M2I2ODQ"
+                    alt="">
+            </div>
+            <div class="carousel-caption">
+                <!-- <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="https://www.reliancedigital.in/medias/Latest-Laptops-Carousel-Banner-01-02-2023.jpg?context=bWFzdGVyfGltYWdlc3w4MDQyOXxpbWFnZS9qcGVnfGltYWdlcy9oYjIvaDZiLzk5NTk0OTQxMjM1NTAuanBnfDdiYzY2NjJlZGFkMmRlZTgzZGI3NWRiOWU5ZDNhYWIyNzEwODdiN2E1YjBiY2NiOTZhNjMxZWM4NGQxYjAxODg"
+                    alt="">
+            </div>
+            <div class="carousel-caption">
+                <!-- <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="https://www.reliancedigital.in/medias/MIdnight-Sale-Carousel-10-PM-8-AM-07-12-2022.jpg?context=bWFzdGVyfGltYWdlc3w4NjgxOXxpbWFnZS9qcGVnfGltYWdlcy9oYjEvaGE3Lzk5NDk2NTc3NTk3NzQuanBnfDJiNzJkNDIzOWU2YWRkY2I2OTM1ZGYzOTk1NzVmYjI1M2JjYTY4MDA0MzhhMmRlODVkYTE1OGIzYjFhYzk1YjA"
+                    alt="">
+            </div>
+            <div class="carousel-caption">
+                <!-- <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+<!-- this section is for latest products  -->
+<div class="product-list-wrapper">
+    <div class="heading">Latest Products</div>
+    <div class="home-product-container">
+        <div class="home-product-list" *ngFor="let item of productList">
+            <div class="home-product-img">
+                <img src="" alt="Image">
+            </div>
+            <div class="home-product-name">{{item.prod_name}} </div>
+            <div class="home-product-price">{{item.prod_price}} </div>
+        </div>
+    </div>
+    <app-footer></app-footer>

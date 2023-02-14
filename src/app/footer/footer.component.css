@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-heading {
+    font-size: 30px;
+}
+
+.admin-login {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.admin-login a {
+    text-decoration: none;
+    color: black;
+}
+
+.admin-login a:hover {
+    color: green;
+}
