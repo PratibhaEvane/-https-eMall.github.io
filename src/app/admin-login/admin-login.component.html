@@ -1,0 +1,13 @@
+<!-- this form is for seller login -->
+<div class="auth">
+    <div class="form-heading">
+        <h1 style="text-align: center;">Login</h1>
+    </div>
+    <div class="form-container">
+        <!-- <h5 style="text-align: center;color: red;">{{show_msg}} </h5> -->
+        <form class="forms" #adminLoginForm="ngForm" (ngSubmit)="adminLogin(adminLoginForm.value)">
+            <input type="text" class="form-input" name="adminId" placeholder="enter your admin ID" ngModel>
+            <input type="text" class="form-input" name="password" placeholder="password" ngModel>
+            <button class="form-input form-button">Login</button>
+        </form>
+    </div>
